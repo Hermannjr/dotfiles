@@ -1,0 +1,9 @@
+[user]
+	name = Hermannjr
+	email = hermannjr@gmail.com
+[core]
+	editor = vim
+[color]
+	ui = true
+[credential]
+	helper = cache
