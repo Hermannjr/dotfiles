@@ -1,3 +1,8 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Last changed on 22.08.2013
+"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " Load ~/.vim/bundle packages.
 call pathogen#infect()
 call pathogen#helptags()
@@ -19,14 +24,18 @@ set so=14
 
 " Tab settings.
 filetype plugin indent on
+set autoindent
 set cindent
 set tabstop=2
 set shiftwidth=2
 set smarttab
-let indent_guides_enable_on_vim_startup = 1
 
-" Automatically leave insert mode after 'updatetime'
-au CursorHoldI * stopinsert
+" Show matching parenthesis
+set showmatch
+
+" Don't let vim write backup or swap files
+set nobackup
+set noswapfile
 
 " Make trailing whitespace annoyingly highlighted.
 highlight ExtraWhitespace ctermbg=red guibg=red
@@ -45,3 +54,4 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
+
