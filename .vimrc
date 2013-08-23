@@ -30,6 +30,9 @@ set tabstop=2
 set shiftwidth=2
 set smarttab
 
+" Don't allow wrapping
+set nowrap
+
 " Show matching parenthesis
 set showmatch
 
